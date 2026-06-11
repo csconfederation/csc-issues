@@ -1,0 +1,19 @@
+name: Notify Discord on new issue
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Discord webhook
+        uses: sarisia/actions-status-discord@v1.8.6
+        with:
+          webhook: ${{ secrets.DISCORD_WEBHOOK }}
+          username: GitHub Issues
+          title: "New issue: ${{ github.event.issue.title }}"
+          description: ${{ github.event.issue.html_url }}
+          color: 0xE8A838
+          nodetail: true
