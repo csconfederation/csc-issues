@@ -18,7 +18,8 @@ This repository is the **public issue tracker** for [Counter-Strike Confederatio
 
 1. Go to the [**Issues**](../../issues) tab and click **New issue**.
 2. Choose a template:
-   - **Bug report** — something is broken or behaving incorrectly
+   - **Bug report** — something is broken or behaving incorrectly on the website, stats page, or Discord bot
+   - **Game Server — Performance issue** — lag, high ping, packet loss, rubber banding, or stuttering on a CSC game server
    - **Feature request / Enhancement** — suggest a new feature or improvement
    - **Question** — ask how something works
 3. Fill in the form fields and submit.
@@ -58,6 +59,7 @@ What makes this good: it has a clear, specific title; explains expected vs. actu
 | `bug` | Something is broken or behaving incorrectly |
 | `enhancement` | A new feature or improvement to existing behavior |
 | `question` | A question about how something works |
+| `game-server` | Related to a CSC game server |
 | `documentation` | A gap or error in docs or in-game instructions |
 | `duplicate` | This issue has already been reported |
 | `wontfix` | Acknowledged but out of scope or intentional |
