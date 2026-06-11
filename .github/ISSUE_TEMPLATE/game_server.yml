@@ -1,0 +1,90 @@
+---
+name: Game Server
+description: Report lag, high ping, packet loss, stuttering, or other game server performance problems
+labels: ["bug", "game-server"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template for performance problems experienced on a CSC game server — lag, rubber banding, high ping, packet loss, stuttering, or server-side hitching. For anything else (wrong map, server didn't start, etc.) use the general Bug report template.
+
+  - type: input
+    id: match
+    attributes:
+      label: Match ID or server IP
+      description: Find the match ID on the CSC website or in Discord. Server IP is shown in-game with `status` in console.
+      placeholder: "e.g. Match #4821 or 192.0.2.10:27015"
+    validations:
+      required: true
+
+  - type: input
+    id: when
+    attributes:
+      label: Date and approximate time
+      description: Include timezone.
+      placeholder: "e.g. June 11 2026, 9:30 PM EST"
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: symptoms
+    attributes:
+      label: What did you experience?
+      description: Check all that apply.
+      options:
+        - label: High ping / latency spike
+        - label: Rubber banding (position snapping)
+        - label: Packet loss
+        - label: Server-side hitching or freezing
+        - label: Shots not registering
+        - label: Audio stuttering
+        - label: Server crash or disconnect
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Describe what happened
+      description: When did it start? Was it constant or in bursts? Did it affect a specific round or the whole match?
+    validations:
+      required: true
+
+  - type: input
+    id: ping
+    attributes:
+      label: Your ping during the issue
+      description: Check the scoreboard or net_graph. Approximate range is fine.
+      placeholder: "e.g. normally 30 ms, spiked to 250+ ms"
+
+  - type: input
+    id: loss
+    attributes:
+      label: Packet loss % (if known)
+      description: Visible on net_graph or in the console. Leave blank if you didn't check.
+      placeholder: "e.g. 15%"
+
+  - type: dropdown
+    id: affected
+    attributes:
+      label: Did other players report the same issue?
+      options:
+        - "Yes — multiple players affected"
+        - "Yes — at least one other player"
+        - "No — seemed to be just me"
+        - "Unknown / didn't ask"
+    validations:
+      required: true
+
+  - type: input
+    id: discord
+    attributes:
+      label: Your Discord username
+      description: Lets us pull server logs and match context.
+      placeholder: "e.g. yourname"
+    validations:
+      required: true
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: Screenshots, net_graph captures, or additional context
+      description: A net_graph screenshot during the issue is especially helpful. Drag and drop files here.
