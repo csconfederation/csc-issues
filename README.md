@@ -19,7 +19,7 @@ This repository is the **public issue tracker** for [Counter-Strike Confederatio
 1. Go to the [**Issues**](../../issues) tab and click **New issue**.
 2. Choose a template:
    - **Bug report** — something is broken or behaving incorrectly on the website, stats page, or Discord bot
-   - **Game Server — Performance issue** — lag, high ping, packet loss, rubber banding, or stuttering on a CSC game server
+   - **Game Server** — lag, high ping, packet loss, rubber banding, or stuttering on a CSC game server
    - **Feature request / Enhancement** — suggest a new feature or improvement
    - **Question** — ask how something works
 3. Fill in the form fields and submit.
@@ -71,8 +71,10 @@ The team applies labels after triage — you don't need to set them yourself.
 
 ## What This Tracker Is Not For
 
-- **Account bans or punishment appeals** — contact a league admin on Discord
-- **Private or sensitive matters** — DM a staff member directly
+For anything below, open a [ticket in Discord](https://discord.com/channels/644377562516029460/1431110723949297858) instead:
+
+- **Account bans or punishment appeals**
+- **Private or sensitive matters**
 
 ---
 
