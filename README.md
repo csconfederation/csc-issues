@@ -17,34 +17,13 @@ This repository is the **public issue tracker** for [Counter-Strike Confederatio
 ## How to Open an Issue
 
 1. Go to the [**Issues**](../../issues) tab and click **New issue**.
-2. Choose the type that best fits (see label guide below).
-3. Fill in the title and body using the guidance below.
-4. Submit — no account setup required beyond a GitHub account.
+2. Choose a template:
+   - **Bug report** — something is broken or behaving incorrectly
+   - **Feature request / Enhancement** — suggest a new feature or improvement
+   - **Question** — ask how something works
+3. Fill in the form fields and submit.
 
----
-
-## What to Include
-
-### Bug reports
-
-- **What you expected to happen**
-- **What actually happened** (include any error messages verbatim)
-- **Steps to reproduce** — numbered, specific, and repeatable
-- **Where it happened** — website, Discord bot, stats page, in-game, etc.
-- **When it started** — approximate date/time helps narrow things down
-- **Your Discord username** — so the team can look up match or account context if needed
-- Screenshots or screen recordings are always helpful
-
-### Feature requests / enhancements
-
-- **What problem does this solve?** Describe the situation or pain point first
-- **What you'd like to see** — describe the desired behavior, not just the outcome
-- **Who benefits?** Players, captains, franchise managers, admins, etc.
-
-### Questions
-
-- Ask your question directly and completely in the issue body
-- For quick questions, the [CSC Discord](https://discord.gg/playcsc) `#help` channel is usually faster
+For quick questions, the [CSC Discord](https://discord.gg/playcsc) `#help` channel is usually faster.
 
 ---
 
