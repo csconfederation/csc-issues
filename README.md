@@ -23,7 +23,31 @@ This repository is the **public issue tracker** for [Counter-Strike Confederatio
    - **Question** — ask how something works
 3. Fill in the form fields and submit.
 
-For quick questions, the [CSC Discord](https://discord.gg/playcsc) `#help` channel is usually faster.
+For quick questions, use the [#help channel on Discord](https://discord.com/channels/644377562516029460/644578759151976488) — it's usually faster.
+
+---
+
+## Example: What a Good Bug Report Looks Like
+
+> **Title:** Gameday lobby shows "Waiting for players" after all 10 players have readied up
+>
+> **Where:** Website (playcsc.com)
+>
+> **What I expected:** The lobby to advance to the veto / map pick screen once all 10 players clicked Ready.
+>
+> **What actually happened:** The lobby stayed on "Waiting for players" indefinitely. Refreshing the page showed everyone as ready but nothing happened. A second player re-clicked Ready and it un-readied them instead of triggering the transition.
+>
+> **Steps to reproduce:**
+> 1. Join a gameday lobby with 10 players queued
+> 2. Have all 10 players click Ready
+> 3. Observe — lobby does not advance
+> 4. A second Ready click from any player de-readies them rather than nudging the lobby forward
+>
+> **When it started:** June 10 2026, around 8 PM EST — happened in at least two lobbies that night
+>
+> **Discord username:** playerone
+
+What makes this good: it has a clear, specific title; explains expected vs. actual behavior; gives numbered reproduction steps; includes timing; and attaches a Discord username so the team can pull match context.
 
 ---
 
@@ -46,7 +70,6 @@ The team applies labels after triage — you don't need to set them yourself.
 ## What This Tracker Is Not For
 
 - **Account bans or punishment appeals** — contact a league admin on Discord
-- **Match disputes** — use the official dispute process in Discord
 - **Private or sensitive matters** — DM a staff member directly
 
 ---
