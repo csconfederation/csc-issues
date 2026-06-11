@@ -1,0 +1,39 @@
+---
+name: Question
+description: Ask a question about how something works
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        For quick questions, the [CSC Discord](https://discord.gg/playcsc) `#help` channel is usually faster. Use this form when you want a written, searchable answer.
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: What is your question about?
+      options:
+        - Website (playcsc.com)
+        - Stats page (stats.playcsc.com)
+        - Discord bot
+        - In-game (CS2 server)
+        - League rules / process
+        - My account or team
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: question
+    attributes:
+      label: Your question
+      description: Ask directly and completely. Include any relevant context.
+    validations:
+      required: true
+
+  - type: input
+    id: discord
+    attributes:
+      label: Your Discord username
+      description: Optional — helps if account context is needed.
+      placeholder: "e.g. yourname"
