@@ -8,12 +8,25 @@ jobs:
   notify:
     runs-on: ubuntu-latest
     steps:
+      - name: Build notification
+        id: notify
+        env:
+          BODY: ${{ github.event.issue.body }}
+          URL: ${{ github.event.issue.html_url }}
+        run: |
+          username=$(printf '%s' "$BODY" | grep -A2 "### Your Discord username" | grep -v "^###" | grep -v "^$" | grep -v "^_No response_" | head -1 | xargs)
+          if [ -n "$username" ]; then
+            echo "description=Discord: ${username} — ${URL}" >> $GITHUB_OUTPUT
+          else
+            echo "description=${URL}" >> $GITHUB_OUTPUT
+          fi
+
       - name: Discord webhook
         uses: sarisia/actions-status-discord@v1.8.6
         with:
           webhook: ${{ secrets.DISCORD_WEBHOOK }}
           username: GitHub Issues
           title: "New issue: ${{ github.event.issue.title }}"
-          description: ${{ github.event.issue.html_url }}
-          color: 0xE8A838
+          description: ${{ steps.notify.outputs.description }}
+          color: 0x9B59B6
           nodetail: true
