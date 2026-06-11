@@ -32,5 +32,6 @@ body:
     id: discord
     attributes:
       label: Your Discord username
-      description: Optional — helps if account context is needed.
       placeholder: "e.g. yourname"
+    validations:
+      required: true
