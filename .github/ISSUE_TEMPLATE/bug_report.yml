@@ -1,0 +1,69 @@
+---
+name: Bug report
+description: Something is broken or behaving incorrectly
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug. Fill in as much detail as you can — the more specific, the faster we can act.
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Where did this happen?
+      options:
+        - Website (playcsc.com)
+        - Stats page (stats.playcsc.com)
+        - Discord bot
+        - In-game (CS2 server)
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect to happen?
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: What actually happened?
+      description: Include any error messages verbatim.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Numbered, specific, and repeatable steps.
+      placeholder: |
+        1. Go to ...
+        2. Click on ...
+        3. See error
+    validations:
+      required: true
+
+  - type: input
+    id: when
+    attributes:
+      label: When did this start?
+      description: Approximate date and time (include timezone).
+      placeholder: "e.g. June 10 2026, ~8 PM EST"
+
+  - type: input
+    id: discord
+    attributes:
+      label: Your Discord username
+      description: Helps us look up match or account context.
+      placeholder: "e.g. yourname#0000 or yourname"
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: Screenshots or additional context
+      description: Drag and drop screenshots or screen recordings here.
