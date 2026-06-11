@@ -54,6 +54,7 @@ What makes this good: it has a clear, specific title; explains expected vs. actu
 
 ## Labels
 
+### Type
 | Label | Meaning |
 |---|---|
 | `bug` | Something is broken or behaving incorrectly |
@@ -61,8 +62,21 @@ What makes this good: it has a clear, specific title; explains expected vs. actu
 | `question` | A question about how something works |
 | `game-server` | Related to a CSC game server |
 | `documentation` | A gap or error in docs or in-game instructions |
-| `duplicate` | This issue has already been reported |
+
+### Status
+| Label | Meaning |
+|---|---|
+| `backlog` | Acknowledged, will be worked on in the future |
+| `investigating` | The team is actively looking into this |
+| `needs-info` | Waiting on the reporter for more details |
+| `in-progress` | Actively being worked on |
+| `blocked` | Work started but waiting on something external |
 | `wontfix` | Acknowledged but out of scope or intentional |
+
+### Resolution
+| Label | Meaning |
+|---|---|
+| `duplicate` | This issue has already been reported |
 | `invalid` | Not a valid issue (spam, user error, etc.) |
 
 The team applies labels after triage — you don't need to set them yourself.
