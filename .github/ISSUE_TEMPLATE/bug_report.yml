@@ -16,7 +16,6 @@ body:
         - Website (playcsc.com)
         - Stats page (stats.playcsc.com)
         - Discord bot
-        - In-game (CS2 server)
         - Other
     validations:
       required: true
