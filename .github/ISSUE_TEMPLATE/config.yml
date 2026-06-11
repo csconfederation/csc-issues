@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: CSC Discord (#help)
+    url: https://discord.gg/playcsc
+    about: Quick questions and real-time support — usually faster than an issue
+  - name: Match disputes
+    url: https://discord.gg/playcsc
+    about: Use the official dispute process in Discord, not the issue tracker
