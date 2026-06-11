@@ -60,3 +60,9 @@ body:
     attributes:
       label: Additional context
       description: Mockups, examples from other leagues, or anything else that helps.
+
+  - type: input
+    id: discord
+    attributes:
+      label: Your Discord username
+      placeholder: "e.g. yourname"
