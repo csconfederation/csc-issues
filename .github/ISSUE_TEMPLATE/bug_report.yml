@@ -60,6 +60,8 @@ body:
       label: Your Discord username
       description: Helps us look up match or account context.
       placeholder: "e.g. yourname#0000 or yourname"
+    validations:
+      required: true
 
   - type: textarea
     id: extra
