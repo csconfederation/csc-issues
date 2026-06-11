@@ -66,3 +66,5 @@ body:
     attributes:
       label: Your Discord username
       placeholder: "e.g. yourname"
+    validations:
+      required: true
